@@ -128,6 +128,12 @@ To display the lane lines on the image, the polynomials where evaluated on a lin
 
 #### 1. Provide a link to your final video output. Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
+After some refactoring of the code found at `In [21]`, the project video was processed and the results at [video_output](./video_output/project_video.mp4)
+
 ### Discussion
 
 #### 1. Briefly, discuss any problems/issues you faced in your implementation of this project. Where will your pipeline likely fail? What could you do to make it more robust?
+
+- There are a few improvements that could be done on the performance of the process due to repetitive calculations.
+- More information could be use from frame to frame to improve the robustness of the process.
+- Other gradients could be use (Ex. Laplacian) to improve the line detection.
